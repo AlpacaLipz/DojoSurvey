@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model Survey
+<div class="row">
+    <div>
+        <h1 class="marLeft bordBot shadow">
+            Dojo Survey
+        </h1>
+    </div>
+    <div class="row contain marLefter">
+    <form asp-action="SurveyCreate" asp-controller="Home" method="post">
+    <div class="d-flex flex-column text-left">
+        <div class="marTop">
+        <label class="form-label otherBot shadow" asp-for="Name">Your Name:</label>
+        <input class="form-control" asp-for="Name" name="Name" type="text">
+        <span class="text-danger" asp-validation-for="Name"></span>
+        </div>
+            <div style="padding: 10px; text-center">
+                <label asp-for="Location" class="form-label otherBot shadow">Dojo Location:</label>
+                <select asp-for="Location" id="Location" class="form-control text-center dropdown-dark" name="Location">
+                    <option value="Average Joes Gym">Average Joes Gym</option>
+                    <option value="Castle Gray Skull">Castle Gray Skull</option>
+                    <option value="Atlantis">Atlantis</option>
+                    <option value="Pallet Town">Pallet Town</option>
+                </select>
+                <span class="text-danger" asp-validation-for="Location"></span>
+            </div>
+            <div style="padding: 10px; text-center">
+                <label asp-for="Language" class="form-label otherBot shadow">Favorite Language:</label>
+                <select asp-for="Language" name="Language" class="form-control text-center">
+                    <option value="Python">Python</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="React.js">React.js</option>
+                    <option value="C#">C#</option>
+                    <option value="Rust">Rust</option>
+                    <option value="Java">Java</option>
+                </select>
+                <span class="text-danger" asp-validation-for="Language"></span>
+            </div>
+            <div>
+                <h3 class="text-light shadow ">Comment (Optional)</h3>
+                <textarea asp-for="Comment" name="Comment" id="Comment" cols="58" rows="10" placeholder="Your Comment Goes Here"></textarea>
+                <span asp-validation-for="Comment" class="text-danger"></span>
+            </div>
+            </div>
+        <button>Submit</button>
+    </form>
+    </div>
+</div>

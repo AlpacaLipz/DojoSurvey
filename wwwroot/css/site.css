@@ -1,0 +1,137 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+a {
+  color: black;
+}
+.groundback{
+  background-color: darkslategrey;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  color: white;
+  margin-bottom: 60px;
+}
+input{
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+button {
+  margin-top: 35px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition-duration: 0, 4s;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  height: 40px;
+  margin-left: 380px;
+}
+button:hover {
+  border: solid gray;
+  background-color: black;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.css-selector {
+  background: linear-gradient(271deg, #2d2f2e, #676b69, #252726);
+  background-size: 600% 600%;
+
+  -webkit-animation: todolist 20s ease infinite;
+  -moz-animation: todolist 20s ease infinite;
+  animation: todolist 20s ease infinite;
+}
+
+@-webkit-keyframes todolist {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes todolist {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes todolist {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.marLeft{
+  margin-left: 100px;
+}
+.marLefter{
+  margin-left: 350px;
+}
+.contain{
+  border: solid white 3px;
+  width: 500px;
+}
+.marTop{
+  margin-top: 10px;
+}
+.bordBot{
+  width: 225px;
+  border-bottom: solid white 3px;
+}
+.bordBott{
+  width: 275px;
+  border-bottom: solid white 3px;
+}
+.otherBot{
+  width: 100%;
+  border-bottom: solid white 1px;
+}
+.navBord{
+  border-top: solid white 3px;
+  border-bottom: solid white 3px;
+}
+.fontWeight{
+  font-weight: 700;
+}
+.shadow{
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.smTop{
+  margin-top: 2px;
+}
+.containTwo{
+  
+
+  width: 350px;
+}
+
+.marLeftest{
+  margin-left: 25px;
+}
